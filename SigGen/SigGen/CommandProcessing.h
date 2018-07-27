@@ -33,8 +33,9 @@ protected:
 	void InvokeCommand( String data );
 	void SerialPolling();
 
-	void MaybeAdjustGain();
 	bool VariableGainEnabled = 0;
+	void SetVariableGainEnabled( bool enabled );
+	void MaybeAdjustGain();
 	uint PrevAdc = 0;
 
 	// commands
@@ -50,17 +51,14 @@ protected:
 
 	void StepsCommand( Parser* commands );
 	void SineCommand( Parser* commands );
-	void PulseCommand( Parser* commands );
+	void PulseCommand(Parser* commands);
+	void HiLowCommand(Parser* commands);
 	void OneShotCommand( Parser* commands );
 	void ZeroCommand( Parser* commands );
-
-#if TEENSY_LI
 	void VarSineCommand( Parser* commands );
-	void SetVariableGainEnabled( bool enabled );
-	void VariableGainCommand( Parser* commands );
-#endif
 
 	void GainCommand( Parser* commands );
+	void VariableGainCommand( Parser* commands );
 	void TestCommand( Parser* commands );
 
 #if ENABLE_DOWNLOAD_COMMANDS

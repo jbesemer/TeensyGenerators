@@ -20,13 +20,14 @@ void CommandProcessing::HelpCommand(){
 
 	Serial.println( "\nWaveform Commands:" );
 	Serial.println( "sine amplitude,offset,count,width	// start sine wave" );
-	Serial.println( "pulse max,[min,]width,duration		// start pulse wave" );
+	Serial.println( "pulse max,[min,]hiWid,lowWid		// start pulse wave");
+	Serial.println( "hilow max,[min,]hiWid,lowWid		// faster pulse wave");
 	Serial.println( "oneshot max,[min,]width			// start oneshot mode" );
 	Serial.println( "step count,start,step,width		// start step wave" );
 	Serial.println( "fixed level				// send fixed level" );
 	Serial.println( "varsine a1,a2, o1,o2, f1,f2, count	// start variable sine wave" );
 
-	// Serial.println( "zero // send zeros" );
+	Serial.println("\n// levels range 0..4095, though not all meters can accept the max");
 
 #if ENABLE_COMMAND_MODIFIERS
 	Serial.println( "\nCommand Modifiers:" );

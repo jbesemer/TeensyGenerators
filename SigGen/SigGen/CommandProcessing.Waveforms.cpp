@@ -5,6 +5,7 @@
 #include "WaveformTriggered.h"
 #include "StairWaveform.h"
 #include "FixedWaveform.h"
+#include "HiLowWaveform.h"
 #include "VarSineWaveform.h"
 
 // changing the current waveform //////////////////////////////////////////////
@@ -117,7 +118,6 @@ void CommandProcessing::SineCommand( Parser* commands ) {
 
 // Sine Waveform //////////////////////////////////////////////////////////////
 
-#if TEENSY_LI
 void CommandProcessing::VarSineCommand( Parser* commands ) {
 	// varsine amin,amax, omin,omax, fmin,fmax[, count]
 
@@ -144,7 +144,6 @@ void CommandProcessing::VarSineCommand( Parser* commands ) {
 	StartNewWaveform(
 		new VarSineWaveform( a1, a2, o1, o2, f1, f2, count ) );
 }
-#endif
 
 // Square Wave and Pulse Waveforms ////////////////////////////////////////////
 
@@ -181,9 +180,43 @@ void CommandProcessing::PulseCommand( Parser* commands ){
 			pulsePeriod ) );
 }
 
+// HiLow Waveforms ////////////////////////////////////////////
+
+void CommandProcessing::HiLowCommand(Parser* commands) {
+	// hilow uint highValue, [uint lowValue,] ulong hiWidth, ulong lowWidth
+
+	switch (commands->Argc) {
+	case 4:
+	case 5:
+		break;
+
+	default:
+		Parser::ReportError(ErrBadArgCount);
+		return;
+	}
+
+	int index = 1;
+	int highValue = commands->Argv[index++].toInt();
+
+	int lowValue;
+	if (commands->Argc == 4)
+		lowValue = 0;
+	else
+		lowValue = commands->Argv[index++].toInt();
+
+	ulong hiWidth = commands->Argv[index++].toInt();
+	ulong lowWidth = commands->Argv[index++].toInt();
+
+	StartNewWaveform(
+		new HiLowWaveform(
+			highValue,
+			lowValue,
+			hiWidth,
+			lowWidth));
+}
+
 // One Shot Waveform //////////////////////////////////////////////////////////
 
-#if TEENSY_LI
 void CommandProcessing::OneShotCommand( Parser* commands ){
 	// oneshot uint highValue, [uint lowValue,] ulong pulseWidth
 
@@ -216,7 +249,6 @@ void CommandProcessing::OneShotCommand( Parser* commands ){
 				lowValue,
 				pulseWidth ) ) );
 }
-#endif // TEENSY_LI
 
 // Stair Steps Waveform ///////////////////////////////////////////////////////
 

@@ -154,6 +154,7 @@ const NameIdPair Parser::NameIds[] = {
 
 	{ CmdSineWave, "sine" },	// start sine wave
 	{ CmdPulse, "pulse" },		// start pulse wave
+	{ CmdHiLow, "hilow" },		// start hiLow wave
 	{ CmdOneShot, "oneshot" },	// start one-shot pulse mode
 	{ CmdSteps, "step" },		// start step wave
 	{ CmdFixed, "fixed" },		// start fixed level "waveform"

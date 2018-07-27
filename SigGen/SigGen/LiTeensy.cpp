@@ -1,12 +1,8 @@
 #include "Config.h"
-// "LiTeensy.h"  (or whatever) // included by Config.h
+// #include "LiTeensy.h" // included by Config.h
 
-void Teensy_Setup(){
-#if TEENSY_LI
+void LiTeensy_Setup(){
 	Serial.begin( 19200 );
-#elif TEENSY_OBIS
-	Serial1.begin( 921600 ); 		//see: https://www.pjrc.com/teensy/td_uart.html
-#endif
 
 	pinMode( LED, OUTPUT );
 	pinMode( LED1, OUTPUT );
@@ -14,37 +10,16 @@ void Teensy_Setup(){
 	pinMode( LED3, OUTPUT );
 	pinMode( LED4, OUTPUT );
 
-	pinMode( BUTTON1, INPUT_PULLUP );
-
-#if TEENSY_LI
-	pinMode( BUTTON2, INPUT_PULLUP );
-	pinMode( BUTTON3, INPUT_PULLUP );
-	pinMode( BUTTON4, INPUT_PULLUP );
-#elif TEENSY_OBIS
-	pinMode( INHIBIT, OUTPUT );
-	digitalWrite( INHIBIT, HIGH );	//disable RS-485 deception by OBIS for now
-
-	pinMode( DMOD, OUTPUT );
-	digitalWrite( DMOD, LOW );		//turn laser off to start
-
-	pinMode( nRX_EN, OUTPUT );		//enable TX & RX for loop back testing
-	digitalWrite( DMOD, LOW );
-	pinMode( TX_EN, OUTPUT );
-	digitalWrite( DMOD, HIGH );
-
-	pinMode( INUSE, INPUT_PULLDOWN ); //OBIS will pull high if connected, force low to talk RS-485
-
-#endif
-
 	show( LED, LED1 );
 	show( LED1, LED2 );
 	show( LED2, LED3 );
 	show( LED3, LED4 );
 	show( LED4, LED );
 
-	// if this function is undefined, you probably have the wrong device selected in your tool chain
-	analogWriteResolution( DAC_BITS);
-	analogReadResolution( ADC_BITS );
+	pinMode( BUTTON1, INPUT_PULLUP );
+	pinMode( BUTTON2, INPUT_PULLUP );
+	pinMode( BUTTON3, INPUT_PULLUP );
+	pinMode( BUTTON4, INPUT_PULLUP );
 }
 
 // LED ports //////////////////////////////////////////////////////////////////

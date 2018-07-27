@@ -59,6 +59,7 @@ enum {
 	CmdSineWave,
 	CmdVarSineWave,
 	CmdPulse,
+	CmdHiLow,
 	CmdOneShot,
 	CmdSteps,
 	CmdFixed,

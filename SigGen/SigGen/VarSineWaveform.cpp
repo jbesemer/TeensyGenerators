@@ -1,8 +1,6 @@
-//
+// 
 // VarSineWaveform.cpp
-//
-
-#if TEENSY_LI
+// 
 
 #include "VarSineWaveform.h"
 
@@ -40,5 +38,3 @@ void VarSineWaveform::Play( AnalogWriter* writer ) {
 
 	SineWaveform::Play( writer );
 }
-
-#endif // TEENSY_LI

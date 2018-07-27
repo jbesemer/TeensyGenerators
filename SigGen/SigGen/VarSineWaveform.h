@@ -12,13 +12,11 @@
 //		P1 -- amplitude
 //		P2 -- offset
 //		P3 -- frequency
-//
+// 
 // when the waveform is defined, the number of samples is fixed, as are the
-// ranges of each of the 3 parameters. The settings vary
+// ranges of each of the 3 parameters. The settings vary 
 
 #define DEFAULTCOUNT 100
-
-#if TEENSY_LI
 
 class VarSineWaveform : public SineWaveform
 {
@@ -32,9 +30,9 @@ protected:
 
 public:
 
-	VarSineWaveform( float ampMin, float ampMax,
-			float offMin, float offMax,
-			float freqMin, float freqMax,
+	VarSineWaveform( float ampMin, float ampMax, 
+			float offMin, float offMax, 
+			float freqMin, float freqMax, 
 			uint count = DEFAULTCOUNT )
 		: SineWaveform( count )
 		, Amplitude( P1, ampMin, ampMax )
@@ -43,10 +41,9 @@ public:
 	{
 		SetFrequency( Frequency.Current );
 
-		Init( Amplitude.Current,
+		Init( Amplitude.Current, 
 			Offset.Current );
 	}
 
 	virtual void Play( AnalogWriter* writer );
 };
-#endif // TEENSY_LI

@@ -98,8 +98,6 @@ void CommandProcessing::GainCommand( Parser* commands ){
 	TheAnalogWriterScaled.SetGain( gain );
 }
 
-#if TEENSY_LI
-
 void CommandProcessing::VariableGainCommand( Parser* commands ){
 	// variablegain [enabled]			// default ON; does not change Gain setting
 
@@ -119,10 +117,8 @@ void CommandProcessing::SetVariableGainEnabled( bool enabled ){
 }
 
 AnalogReaderFiltered ADC( P1 );
-#endif // TEENSY_LI
 
 void CommandProcessing::MaybeAdjustGain(){
-#if TEENSY_LI
 	if( VariableGainEnabled ){
 		if( ADC.Changed() ){
 			uint adc = ADC.Current;
@@ -135,16 +131,17 @@ void CommandProcessing::MaybeAdjustGain(){
 			Serial.println( gain );
 		}
 	}
-#endif // TEENSY_LI
 }
 
 void CommandProcessing::IdentifyCommand(){
-	String id = "JB, Inc - SigGen ";
-	id.append( DATE );
-	id.append( "  - v" );
+	String id = "JB, Inc - ";
+	id.append( ASSEMBLYNAME );
+	id.append( " - v" );
 	id.append( VERSION );
 	id.append( " - " );
 	id.append( DATE );
+	id.append( " - " );
+	id.append( MODEL );
 
 	Serial.println( id );
 }

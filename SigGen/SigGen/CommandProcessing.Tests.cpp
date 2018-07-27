@@ -6,11 +6,9 @@
 #include "Button.h"
 #include "Button.Toggle.h"
 #include "Button.Repeating.h"
-#include "Teensy.h"
+#include "LiTeensy.h"
 #include "AnalogReaderFiltered.h"
 #include "AnalogReaderScaled.h"
-
-#if TEENSY_LI
 
 void Test9() {
 	Serial.println( "Beginning test 9..." );
@@ -69,7 +67,6 @@ void Test8( Parser* commands ) {
 
 void Test7() {
 	Serial.println( "Beginning test 7..." );
-	ulong average = 0;
 	Serial.println( "Click B4 to exit" );
 
 	Blinker blinker( LED, ~0x1F, 10, 200 );		// distinct pattern from normal
@@ -84,6 +81,7 @@ void Test7() {
 
 	oneShot.Start();
 
+	ulong average = 0;
 	elapsedMicros elapsed;	// for loop timing
 	for( ;; ){
 		elapsed = 0;
@@ -136,9 +134,9 @@ void Test7() {
 
 		average = ( average + elapsed ) / 2;
 	}
+
 	Printf( "... Exiting test 7, average = %ld\n", average );
 }
-#endif // TEENSY_LI
 
 void Test5(){
 	for(;;){
@@ -229,7 +227,6 @@ void CommandProcessing::TestCommand( Parser* commands ){
 			Setup();	// re-run setup for testing
 			break;
 
-#if TEENSY_LI
 		case 7:
 			Test7();
 			break;
@@ -237,11 +234,10 @@ void CommandProcessing::TestCommand( Parser* commands ){
 		case 8:
 			Test8( commands );
 			break;
+
 		case 9:
 			Test9();
 			break;
-#endif // TEENSY_LI
-
 	}
 }
 

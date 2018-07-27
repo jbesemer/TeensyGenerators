@@ -40,7 +40,7 @@ CommandProcessing CommandProcessor; //  ( &TheGenerator );
 // Setup //////////////////////////////////////////////////////////////////////
 
 void setup() {
-	Teensy_Setup();
+	LiTeensy_Setup();
 	Serial.println( "Starting..." );
 
 	CommandProcessor.Setup();
