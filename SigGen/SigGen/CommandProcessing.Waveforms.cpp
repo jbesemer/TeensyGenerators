@@ -8,6 +8,19 @@
 #include "HiLowWaveform.h"
 #include "VarSineWaveform.h"
 
+// show the current waveform //////////////////////////////////////////////
+
+void CommandProcessing::ShowCurrentWaveform() {
+	Serial.print("Current Waveform: ");
+	Waveform* current = TheGenerator.Get();
+	if (current == NULL) {
+		Serial.println("NULL");
+	}
+	else {
+		Serial.println(current->ToString());
+	}
+}
+
 // changing the current waveform //////////////////////////////////////////////
 
 // start a new waveform but mark it as CustomWaveform so it can be deleted next time a new one is created

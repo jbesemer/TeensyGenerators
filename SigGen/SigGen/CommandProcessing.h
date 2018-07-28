@@ -28,6 +28,7 @@ protected:
 	Waveform* CustomWaveform = NULL;
 	void StartNewWaveform( Waveform* waveform );
 	void StartWaveform( Waveform* waveform );
+	void ShowCurrentWaveform();
 
 	String SerialData = "";
 	void InvokeCommand( String data );

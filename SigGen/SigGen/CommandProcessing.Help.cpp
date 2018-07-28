@@ -16,7 +16,8 @@ void CommandProcessing::HelpCommand(){
 	Serial.println( "variablegain?	// query variable gain" );
 	Serial.println( "zero [0|1]	// start/stop zeroing mode" );
 	Serial.println( "demo [0|1]	// start/stop demo mode" );
-	Serial.println( "stop		// stop current waveform" );
+	Serial.println( "stop		// stop current waveform");
+	Serial.println( "show		// show current waveform");
 
 	Serial.println( "\nWaveform Commands:" );
 	Serial.println( "sine amplitude,offset,count,width	// start sine wave" );

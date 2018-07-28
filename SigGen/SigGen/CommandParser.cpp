@@ -151,6 +151,7 @@ const NameIdPair Parser::NameIds[] = {
 	{ CmdStop, "stop" },		// stop current waveform
 	{ CmdZero, "zero" },		// start zeroing or resume previous waveform
 	{ CmdDemo, "demo" },		// start or stop demo mode
+	{ CmdShowWaveform, "show" },// show current waveform
 
 	{ CmdSineWave, "sine" },	// start sine wave
 	{ CmdPulse, "pulse" },		// start pulse wave
@@ -181,7 +182,7 @@ const char* Parser::ErrorMessages[] = {
 	"Arg Count",
 	"Bad Argument",
 	"Bad Test ID",
-	"Unimplemented",
+	"Unimplemented (missing from CommandProcessing::InvokeCommand switch)",
 	"Illegal Operation",
 };
 

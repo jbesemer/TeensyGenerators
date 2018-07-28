@@ -55,6 +55,7 @@ enum {
 	CmdStop,
 	CmdZero,
 	CmdDemo,
+	CmdShowWaveform,
 
 	CmdSineWave,
 	CmdVarSineWave,

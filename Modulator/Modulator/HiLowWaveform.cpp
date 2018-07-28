@@ -1,7 +1,11 @@
 #include "HiLowWaveform.h"
 
 //	HiLowWaveform -- outputs a high value followed by a low value,
-//		each of a specific duration. (Optimized for speed vs. HiLowWaveform.)
+//		each of a specific duration. 
+// This version is optimized for speed vs. PulseWaveform. 
+// HiLowWaveform can output pulses small as around 1 uSec, 
+// whereas with PulseWaveform anything smaller than around 5 uSec
+// all takes 5 uSec to turn on and off.
 
 void HiLowWaveform::Init(int highValue, int lowValue, ulong highWidth, ulong lowWidth)
 {

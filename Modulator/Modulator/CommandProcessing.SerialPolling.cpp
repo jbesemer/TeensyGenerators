@@ -68,7 +68,7 @@ void CommandProcessing::InvokeCommand( String data ) {
 		ZeroCommand( &Commands );
 		break;
 	case CmdDemo:
-		DemoCommand(&Commands);
+		DemoCommand( &Commands );
 		break;
 	case CmdShowWaveform:
 		ShowCurrentWaveform();
