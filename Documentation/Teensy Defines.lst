@@ -1,0 +1,38 @@
+#from Modulator
+
+CommandProcessing.h:#if TEENSY_LI
+Config.h:#define TEENSY_LI			0	// original "Li" board
+Config.h:#define TEENSY_OBIS		1	// revisions for modulating obis lasers
+Config.h:#define TEENSY_CELLEX	0	// revisions for cellex version
+Teensy.h:#if TEENSY_LI
+Teensy.h:#if TEENSY_OBIS
+Teensy.h:#if TEENSY_CELLEX
+Teensy.h:#if TEENSY_LI
+Teensy.h:#if TEENSY_OBIS
+Teensy.h:#if TEENSY_LI
+Teensy.h:#if TEENSY_OBIS
+VarSineWaveform.h:#if TEENSY_LI
+VarSineWaveform.h:#endif // TEENSY_LI
+WaveformTriggered.h:#if TEENSY_LI
+WaveformTriggered.h:#endif // TEENSY_LI
+CommandProcessing.cpp:#if TEENSY_LI
+CommandProcessing.cpp:#endif // TEENSY_LI
+CommandProcessing.cpp:#if TEENSY_LI
+CommandProcessing.cpp:#endif // TEENSY_LI
+CommandProcessing.SerialPolling.cpp:#if TEENSY_LI
+CommandProcessing.SerialPolling.cpp:#if TEENSY_LI
+CommandProcessing.Tests.cpp:#if TEENSY_LI
+CommandProcessing.Tests.cpp:#endif // TEENSY_LI
+CommandProcessing.Tests.cpp:#if TEENSY_LI
+CommandProcessing.Tests.cpp:#endif // TEENSY_LI
+CommandProcessing.Waveforms.cpp:#if TEENSY_LI
+CommandProcessing.Waveforms.cpp:#if TEENSY_LI
+CommandProcessing.Waveforms.cpp:#endif // TEENSY_LI
+Teensy.cpp:#if TEENSY_LI
+Teensy.cpp:#elif TEENSY_OBIS
+Teensy.cpp:#if TEENSY_LI
+Teensy.cpp:#elif TEENSY_OBIS
+VarSineWaveform.cpp:#if TEENSY_LI
+VarSineWaveform.cpp:#endif // TEENSY_LI
+WaveformTriggered.cpp:#if TEENSY_LI
+WaveformTriggered.cpp:#endif // TEENSY_LI
