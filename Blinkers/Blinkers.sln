@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlinkerLibrary", "BlinkerLibrary\BlinkerLibrary.vcxitems", "{302B5DA3-6892-4EE3-9361-18373E566F28}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blinkers", "Blinkers\Blinkers.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedLibrary", "SharedLibrary\SharedLibrary.vcxitems", "{A18C2C4B-EFE2-4EA5-ACCA-0A6742ADB8D7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		BlinkerLibrary\BlinkerLibrary.vcxitems*{302b5da3-6892-4ee3-9361-18373e566f28}*SharedItemsImports = 9
-		BlinkerLibrary\BlinkerLibrary.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		SharedLibrary\SharedLibrary.vcxitems*{a18c2c4b-efe2-4ea5-acca-0a6742adb8d7}*SharedItemsImports = 9
+		SharedLibrary\SharedLibrary.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86

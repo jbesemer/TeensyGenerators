@@ -4,11 +4,11 @@
     <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)BlinkOnce.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Blink.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Blink.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlinkOnce.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)BlinkOnce.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Blink.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blink.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlinkOnce.h" />
   </ItemGroup>
 </Project>

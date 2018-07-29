@@ -4,7 +4,7 @@
  Author:	jb
 */
 
-#include <Blink.h>
+#include "Blink.h"
 
 // the setup function runs once when you press reset or power the board
 void setup() {

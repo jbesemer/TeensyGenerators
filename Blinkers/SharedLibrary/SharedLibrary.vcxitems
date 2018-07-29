@@ -3,8 +3,7 @@
   <PropertyGroup Label="Globals">
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <ItemsProjectGuid>{302b5da3-6892-4ee3-9361-18373e566f28}</ItemsProjectGuid>
-    <ItemsProjectName>BlinkerLibrary</ItemsProjectName>
+    <ItemsProjectGuid>{a18c2c4b-efe2-4ea5-acca-0a6742adb8d7}</ItemsProjectGuid>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -18,11 +17,11 @@
     <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Blink.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)BlinkOnce.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Blink.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)BlinkOnce.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blink.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlinkOnce.h" />
   </ItemGroup>
 </Project>
