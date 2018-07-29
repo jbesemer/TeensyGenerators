@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommandParser.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommandProcessing.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ArbitraryWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DemoWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DownloadableWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FixedWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HiLowWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PulseWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SineWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)StairWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TestWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UniformWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Waveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformPadded.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformSequence.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ZeroWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReader.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogWriter.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Generator.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sample.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blinker.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blinker.OneShot.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.Repeating.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.Toggle.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CRC16.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LedOneShot.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PersistentSettings.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SettingsStruct.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Stabalizer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ZeroingMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Download.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Help.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.SerialPolling.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Tests.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Waveforms.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ArbitraryWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DemoWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DownloadableWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FixedWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HiLowWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PulseWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SineWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)StairWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TestWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)UniformWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Waveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformPadded.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformSequence.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ZeroWaveform.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Generator.cpp">
+      <Filter>Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CRC16.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PersistentSettings.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SettingsStruct.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ZeroingMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{85c53448-2b9f-4089-9a2e-1112d9bbae0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Waveforms">
+      <UniqueIdentifier>{8045c313-9b7a-49da-9d3d-963c2533ac2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generator">
+      <UniqueIdentifier>{b359aa34-4f9c-4ccf-b465-927e3163bd5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{57a40353-597b-403b-a184-9e21f2c19a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

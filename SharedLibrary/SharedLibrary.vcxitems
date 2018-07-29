@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{e9bb8a89-3483-4205-a9c5-90c73ee4adbf}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogWriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ArbitraryWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blinker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blinker.OneShot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.Repeating.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Button.Toggle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommandParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommandProcessing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CRC16.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DemoWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DownloadableWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FixedWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HiLowWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LedOneShot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PersistentSettings.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PulseWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sample.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SettingsStruct.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SineWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Stabalizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StairWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TestWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UniformWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Waveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformPadded.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformSequence.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ZeroingMode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ZeroWaveform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ArbitraryWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Download.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Help.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.SerialPolling.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Tests.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommandProcessing.Waveforms.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CRC16.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DemoWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DownloadableWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FixedWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Generator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HiLowWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PersistentSettings.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PulseWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SettingsStruct.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SineWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StairWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TestWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UniformWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Waveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformPadded.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformSequence.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ZeroingMode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ZeroWaveform.cpp" />
+  </ItemGroup>
+</Project>

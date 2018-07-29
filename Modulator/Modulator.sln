@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeneratorLibrary", "GeneratorLibrary\GeneratorLibrary.vcxitems", "{2A0C0CC6-2508-4EA8-8441-EF17D15A3E7A}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modulator", "Modulator\Modulator.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedLibrary", "..\SharedLibrary\SharedLibrary.vcxitems", "{E9BB8A89-3483-4205-A9C5-90C73EE4ADBF}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		GeneratorLibrary\GeneratorLibrary.vcxitems*{2a0c0cc6-2508-4ea8-8441-ef17d15a3e7a}*SharedItemsImports = 9
-		GeneratorLibrary\GeneratorLibrary.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\SharedLibrary\SharedLibrary.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		..\SharedLibrary\SharedLibrary.vcxitems*{e9bb8a89-3483-4205-a9c5-90c73ee4adbf}*SharedItemsImports = 9
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
