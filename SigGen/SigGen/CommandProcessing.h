@@ -35,9 +35,8 @@ protected:
 	void SerialPolling();
 
 	bool VariableGainEnabled = 0;
-	void SetVariableGainEnabled( bool enabled );
-	void MaybeAdjustGain();
 	uint PrevAdc = 0;
+	void MaybeAdjustGain();
 
 	// commands
 
@@ -54,12 +53,19 @@ protected:
 	void SineCommand( Parser* commands );
 	void PulseCommand(Parser* commands);
 	void HiLowCommand(Parser* commands);
+#if ONE_SHOT_COMMAND
 	void OneShotCommand( Parser* commands );
+#endif
 	void ZeroCommand( Parser* commands );
+
+#if VARIABLE_COMMANDS
 	void VarSineCommand( Parser* commands );
+	void SetVariableGainEnabled( bool enabled );
+	void VariableGainCommand( Parser* commands );
+	void MaybeAdjustGain();
+#endif
 
 	void GainCommand( Parser* commands );
-	void VariableGainCommand( Parser* commands );
 	void TestCommand( Parser* commands );
 
 #if ENABLE_DOWNLOAD_COMMANDS

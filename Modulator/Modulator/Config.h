@@ -16,6 +16,11 @@
 #define TEENSY_OBIS		1	// revisions for modulating obis lasers
 #define TEENSY_CELLEX	0	// revisions for cellex version
 
+// individual features/commands 
+
+#define ONE_SHOT_COMMAND	0	// enable OneShotCommand
+#define VARIABLE_COMMANDS	0	// variable waveforms based on Pot inputs (which of course presumes a Pot)
+
 #include "Teensy.h"
 
 // app configuration

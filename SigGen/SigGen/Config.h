@@ -8,6 +8,11 @@
 #include "WProgram.h"
 #endif
 
+// individual features/commands 
+
+#define ONE_SHOT_COMMAND	0	// enable OneShotCommand
+#define VARIABLE_COMMANDS	1	// variable waveforms based on Pot inputs (which of course presumes a Pot)
+
 // board specifics
 
 #include "LiTeensy.h"

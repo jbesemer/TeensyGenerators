@@ -8,7 +8,7 @@
 #include "Button.Repeating.h"
 #include "Teensy.h"
 
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 
 void Test9() {
 	Serial.println( "Beginning test 9..." );
@@ -151,7 +151,7 @@ void Test5(){
 	}
 }
 
-#endif // TEENSY_LI
+#endif // VARIABLE_COMMANDS
 
 void Test4a( int channel ){
 	uint value = analogRead( channel );
@@ -225,7 +225,7 @@ void CommandProcessing::TestCommand( Parser* commands ){
 			Setup();	// re-run setup for testing
 			break;
 
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 		case 5:
 			Test5();
 			break;
@@ -241,7 +241,7 @@ void CommandProcessing::TestCommand( Parser* commands ){
 		case 9:
 			Test9();
 			break;
-#endif // TEENSY_LI
+#endif // VARIABLE_COMMANDS
 
 	}
 }

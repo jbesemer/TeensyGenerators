@@ -131,6 +131,7 @@ void CommandProcessing::SineCommand( Parser* commands ) {
 
 // Sine Waveform //////////////////////////////////////////////////////////////
 
+#if VARIABLE_COMMANDS
 void CommandProcessing::VarSineCommand( Parser* commands ) {
 	// varsine amin,amax, omin,omax, fmin,fmax[, count]
 
@@ -157,6 +158,7 @@ void CommandProcessing::VarSineCommand( Parser* commands ) {
 	StartNewWaveform(
 		new VarSineWaveform( a1, a2, o1, o2, f1, f2, count ) );
 }
+#endif
 
 // Square Wave and Pulse Waveforms ////////////////////////////////////////////
 
@@ -230,6 +232,7 @@ void CommandProcessing::HiLowCommand(Parser* commands) {
 
 // One Shot Waveform //////////////////////////////////////////////////////////
 
+#if ONE_SHOT_COMMAND
 void CommandProcessing::OneShotCommand( Parser* commands ){
 	// oneshot uint highValue, [uint lowValue,] ulong pulseWidth
 
@@ -262,6 +265,7 @@ void CommandProcessing::OneShotCommand( Parser* commands ){
 				lowValue,
 				pulseWidth ) ) );
 }
+#endif // ONE_SHOT_COMMAND
 
 // Stair Steps Waveform ///////////////////////////////////////////////////////
 

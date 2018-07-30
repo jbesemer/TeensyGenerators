@@ -78,7 +78,7 @@ void CommandProcessing::InvokeCommand( String data ) {
 	case CmdSetGain:
 		GainCommand( &Commands );
 		break;
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 	case CmdGetVariableGain:
 	case CmdSetVariableGain:
 		VariableGainCommand( &Commands );
@@ -89,10 +89,12 @@ void CommandProcessing::InvokeCommand( String data ) {
 	case CmdSineWave:
 		SineCommand( &Commands );
 		break;
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 	case CmdVarSineWave:
 		VarSineCommand( &Commands );
 		break;
+#endif
+#if ONE_SHOT_COMMAND
 	case CmdOneShot:
 		OneShotCommand( &Commands );
 		break;

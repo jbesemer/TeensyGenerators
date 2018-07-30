@@ -2,9 +2,11 @@
 #include "DemoWaveform.h"
 #include "PulseWaveform.h"
 #include "SineWaveform.h"
+#include "WaveformTriggered.h"
 #include "StairWaveform.h"
 #include "FixedWaveform.h"
 #include "HiLowWaveform.h"
+#include "VarSineWaveform.h"
 
 // show the current waveform //////////////////////////////////////////////
 
@@ -129,7 +131,7 @@ void CommandProcessing::SineCommand( Parser* commands ) {
 
 // Sine Waveform //////////////////////////////////////////////////////////////
 
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 void CommandProcessing::VarSineCommand( Parser* commands ) {
 	// varsine amin,amax, omin,omax, fmin,fmax[, count]
 
@@ -230,7 +232,7 @@ void CommandProcessing::HiLowCommand(Parser* commands) {
 
 // One Shot Waveform //////////////////////////////////////////////////////////
 
-#if TEENSY_LI
+#if ONE_SHOT_COMMAND
 void CommandProcessing::OneShotCommand( Parser* commands ){
 	// oneshot uint highValue, [uint lowValue,] ulong pulseWidth
 
@@ -263,7 +265,7 @@ void CommandProcessing::OneShotCommand( Parser* commands ){
 				lowValue,
 				pulseWidth ) ) );
 }
-#endif // TEENSY_LI
+#endif // ONE_SHOT_COMMAND
 
 // Stair Steps Waveform ///////////////////////////////////////////////////////
 

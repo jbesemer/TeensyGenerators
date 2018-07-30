@@ -78,27 +78,32 @@ void CommandProcessing::InvokeCommand( String data ) {
 	case CmdSetGain:
 		GainCommand( &Commands );
 		break;
+#if VARIABLE_COMMANDS
 	case CmdGetVariableGain:
 	case CmdSetVariableGain:
 		VariableGainCommand( &Commands );
 		break;
-
+#endif
 		// waveform commands
 
 	case CmdSineWave:
 		SineCommand( &Commands );
 		break;
+#if VARIABLE_COMMANDS
 	case CmdVarSineWave:
 		VarSineCommand( &Commands );
 		break;
+#endif
+#if ONE_SHOT_COMMAND
+	case CmdOneShot:
+		OneShotCommand( &Commands );
+		break;
+#endif
 	case CmdPulse:
 		PulseCommand( &Commands );
 		break;
 	case CmdHiLow:
 		HiLowCommand(&Commands);
-		break;
-	case CmdOneShot:
-		OneShotCommand( &Commands );
 		break;
 	case CmdSteps:
 		StepsCommand( &Commands );

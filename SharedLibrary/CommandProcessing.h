@@ -53,10 +53,12 @@ protected:
 	void SineCommand( Parser* commands );
 	void PulseCommand(Parser* commands);
 	void HiLowCommand(Parser* commands);
+#if ONE_SHOT_COMMAND
 	void OneShotCommand( Parser* commands );
+#endif
 	void ZeroCommand( Parser* commands );
 
-#if TEENSY_LI
+#if VARIABLE_COMMANDS
 	void VarSineCommand( Parser* commands );
 	void SetVariableGainEnabled( bool enabled );
 	void VariableGainCommand( Parser* commands );

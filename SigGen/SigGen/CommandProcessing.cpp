@@ -1,7 +1,6 @@
 #include "CommandProcessing.h"
 #include "PersistentSettings.h"
 #include "DemoWaveform.h"
-#include "AnalogReaderFiltered.h"
 #include "Generator.h"
 #include "Button.Toggle.h"
 #include "Button.h"
@@ -45,8 +44,9 @@ void CommandProcessing::Loop() {
 	TheZeroingMode.Loop();
 
 	if( !IsZeroing() ) {
+#if VARIABLE_COMMANDS
 		MaybeAdjustGain();
-
+#endif
 		// generate one cycle of currently selected waveform
 		TheGenerator.Loop();
 	}
@@ -98,6 +98,8 @@ void CommandProcessing::GainCommand( Parser* commands ){
 	TheAnalogWriterScaled.SetGain( gain );
 }
 
+#if VARIABLE_COMMANDS
+
 void CommandProcessing::VariableGainCommand( Parser* commands ){
 	// variablegain [enabled]			// default ON; does not change Gain setting
 
@@ -117,7 +119,9 @@ void CommandProcessing::SetVariableGainEnabled( bool enabled ){
 }
 
 AnalogReaderFiltered ADC( P1 );
+#endif // VARIABLE_COMMANDS
 
+#if VARIABLE_COMMANDS
 void CommandProcessing::MaybeAdjustGain(){
 	if( VariableGainEnabled ){
 		if( ADC.Changed() ){
@@ -132,6 +136,7 @@ void CommandProcessing::MaybeAdjustGain(){
 		}
 	}
 }
+#endif // VARIABLE_COMMANDS
 
 void CommandProcessing::IdentifyCommand(){
 	String id = "JB, Inc - ";

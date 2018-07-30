@@ -7,8 +7,8 @@
 #include "Button.Toggle.h"
 #include "Button.Repeating.h"
 #include "LiTeensy.h"
-#include "AnalogReaderFiltered.h"
-#include "AnalogReaderScaled.h"
+
+#if VARIABLE_COMMANDS
 
 void Test9() {
 	Serial.println( "Beginning test 9..." );
@@ -151,6 +151,8 @@ void Test5(){
 	}
 }
 
+#endif // VARIABLE_COMMANDS
+
 void Test4a( int channel ){
 	uint value = analogRead( channel );
 	Serial.print( "A" );
@@ -219,12 +221,13 @@ void CommandProcessing::TestCommand( Parser* commands ){
 			Test4();
 			break;
 
-		case 5:
-			Test5();
-			break;
-
 		case 6:
 			Setup();	// re-run setup for testing
+			break;
+
+#if VARIABLE_COMMANDS
+		case 5:
+			Test5();
 			break;
 
 		case 7:
@@ -238,6 +241,8 @@ void CommandProcessing::TestCommand( Parser* commands ){
 		case 9:
 			Test9();
 			break;
+#endif // VARIABLE_COMMANDS
+
 	}
 }
 
