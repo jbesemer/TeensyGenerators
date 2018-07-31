@@ -6,9 +6,10 @@
 #include "Button.h"
 #include "Button.Toggle.h"
 #include "Button.Repeating.h"
-#include "LiTeensy.h"
 
 #if VARIABLE_COMMANDS
+#include "AnalogReaderFiltered.h"
+#include "AnalogReaderScaled.h"
 
 void Test9() {
 	Serial.println( "Beginning test 9..." );

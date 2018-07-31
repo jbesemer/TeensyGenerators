@@ -27,7 +27,7 @@
 
 #define ASSEMBLYNAME "Modulator"
 #define VERSION "0.0.3"
-#define MODEL = "Teensy 3.1"
+#define MODEL "Teensy 3.1"
 #define DATE "23-Jul-2018 14:50"
 
 #if VER_0_0_1

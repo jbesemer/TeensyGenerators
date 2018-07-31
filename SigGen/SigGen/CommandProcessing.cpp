@@ -4,6 +4,7 @@
 #include "Generator.h"
 #include "Button.Toggle.h"
 #include "Button.h"
+#include "AnalogReaderFiltered.h"
 
 // CommandProcessing has two responsibilities:
 //		1. it processes command input from the serial port

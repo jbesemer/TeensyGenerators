@@ -2,7 +2,6 @@
 
 #include "Waveform.h"
 #include "Button.h"
-#include "LiTeensy.h"
 
 // WaveformTriggered waits for a button to be pressed and released
 //		before playing the supplied waveform

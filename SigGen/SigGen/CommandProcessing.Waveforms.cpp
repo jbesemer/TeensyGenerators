@@ -6,7 +6,10 @@
 #include "StairWaveform.h"
 #include "FixedWaveform.h"
 #include "HiLowWaveform.h"
+
+#if VARIABLE_COMMANDS
 #include "VarSineWaveform.h"
+#endif
 
 // show the current waveform //////////////////////////////////////////////
 

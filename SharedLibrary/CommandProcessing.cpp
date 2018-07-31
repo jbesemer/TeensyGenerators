@@ -4,6 +4,7 @@
 #include "Generator.h"
 #include "Button.Toggle.h"
 #include "Button.h"
+#include "AnalogReaderFiltered.h"
 
 // CommandProcessing has two responsibilities:
 //		1. it processes command input from the serial port
@@ -44,8 +45,9 @@ void CommandProcessing::Loop() {
 	TheZeroingMode.Loop();
 
 	if( !IsZeroing() ) {
+#if VARIABLE_COMMANDS
 		MaybeAdjustGain();
-
+#endif
 		// generate one cycle of currently selected waveform
 		TheGenerator.Loop();
 	}
@@ -120,8 +122,8 @@ void CommandProcessing::SetVariableGainEnabled( bool enabled ){
 AnalogReaderFiltered ADC( P1 );
 #endif // VARIABLE_COMMANDS
 
-void CommandProcessing::MaybeAdjustGain(){
 #if VARIABLE_COMMANDS
+void CommandProcessing::MaybeAdjustGain(){
 	if( VariableGainEnabled ){
 		if( ADC.Changed() ){
 			uint adc = ADC.Current;
@@ -134,8 +136,8 @@ void CommandProcessing::MaybeAdjustGain(){
 			Serial.println( gain );
 		}
 	}
-#endif // VARIABLE_COMMANDS
 }
+#endif // VARIABLE_COMMANDS
 
 void CommandProcessing::IdentifyCommand(){
 	String id = "JB, Inc - ";

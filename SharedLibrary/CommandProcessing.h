@@ -36,7 +36,6 @@ protected:
 
 	bool VariableGainEnabled = 0;
 	uint PrevAdc = 0;
-	void MaybeAdjustGain();
 
 	// commands
 
