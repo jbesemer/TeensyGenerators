@@ -118,13 +118,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
-    <ClInclude Include="LiTeensy.h" />
+    <ClInclude Include="SigGen.h" />
     <ClInclude Include="__vm\.SigGen.vsarduino.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="LiTeensy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM3" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

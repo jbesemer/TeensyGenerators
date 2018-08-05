@@ -2,6 +2,19 @@
 
 #include "arduino.h"
 
+// preferred abbreviations
+
+typedef unsigned int uint;		// 16 bits
+typedef unsigned long ulong;	// 32 bits
+
+// LEDs ///////////////////////////////////////////////////////////////
+
+extern void LedSet( int ledPin, int isOn );
+extern void LedOn( int ledPin );
+extern void LedOff( int ledPin );
+
+// Buttons ////////////////////////////////////////////////////////////
+
 #define BUTTON_NONE	0	// returned by AnyButtonPressed if no button is pressed
 
 // map button num (1,2,3,4) to above port nums
@@ -16,10 +29,6 @@
 		? ( BUTTON1 - (BUTTON) + 1 )		\
 		: 0 )
 
-extern void LedSet( int ledPin, int isOn );
-extern void LedOn( int ledPin );
-extern void LedOff( int ledPin );
-
 // return the other state
 extern int OppositeState( int state );
 
@@ -33,12 +42,7 @@ extern int AnyButtonPressed( int* buttons );
 extern int AnyButtonPressed( int* buttons, int length );
 
 
-// preferred abbreviations
-
-typedef unsigned int uint;		// 16 bits
-typedef unsigned long ulong;	// 32 bits
-
-// Misc. //////////////////////////////////////////////////////////////////////
+// Misc. //////////////////////////////////////////////////////////////
 
 extern void show( int pinOff, int pinOn );
 extern int FreeRam();

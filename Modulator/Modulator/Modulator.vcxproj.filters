@@ -24,13 +24,6 @@
     <ClInclude Include="__vm\.Modulator.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TeensyModulator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="TeensyModulator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Modulator.h" />
   </ItemGroup>
 </Project>

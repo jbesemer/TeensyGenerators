@@ -1,7 +1,6 @@
 #include "TeensyCommon.h"
 
-
-// LED ports //////////////////////////////////////////////////////////////////
+// LED ports //////////////////////////////////////////////////////////
 
 void LedSet( int ledPin, int isOn ){
 	digitalWrite(
@@ -27,7 +26,7 @@ void show( int pinOff, int pinOn ){
 	delay( LEDONTIME );
 }
 
-// Buttons /////////////////////////////////////////////////////////////
+// Buttons ////////////////////////////////////////////////////////////
 
 int OppositeState( int state ){
 	if( state == HIGH )
@@ -91,6 +90,9 @@ void PrintFreeRam(){
 #include <stdarg.h>
 
 bool TraceEnabled = false;
+
+// visual studio editor indicates syntax problems with the code below, 
+// but it compiles and runs just fine on Arduino hardware.
 
 void Trace( const char* fmt, ... ){
 	if( !TraceEnabled )

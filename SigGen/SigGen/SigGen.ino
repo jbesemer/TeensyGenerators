@@ -38,7 +38,25 @@ CommandProcessing CommandProcessor; //  ( &TheGenerator );
 // Setup //////////////////////////////////////////////////////////////////////
 
 void setup() {
-	LiTeensy_Setup();
+	Serial.begin( 19200 );
+
+	pinMode( LED, OUTPUT );
+	pinMode( LED1, OUTPUT );
+	pinMode( LED2, OUTPUT );
+	pinMode( LED3, OUTPUT );
+	pinMode( LED4, OUTPUT );
+
+	show( LED, LED1 );
+	show( LED1, LED2 );
+	show( LED2, LED3 );
+	show( LED3, LED4 );
+	show( LED4, LED );
+
+	pinMode( BUTTON1, INPUT_PULLUP );
+	pinMode( BUTTON2, INPUT_PULLUP );
+	pinMode( BUTTON3, INPUT_PULLUP );
+	pinMode( BUTTON4, INPUT_PULLUP );
+
 	Serial.println( "Starting..." );
 
 	CommandProcessor.Setup();
@@ -53,3 +71,16 @@ void loop(){
 	// process any commands from Serial port
 	CommandProcessor.Loop();
 }
+
+// AllButtons and AnyButtonPressed ////////////////////////////////////////////
+
+int AllButtons[] = {
+	BUTTON1,
+	BUTTON2,
+	BUTTON3,
+	BUTTON4,
+	BUTTON_NONE,
+};
+
+int AnyButtonPressed(){ return AnyButtonPressed( AllButtons ); }
+
