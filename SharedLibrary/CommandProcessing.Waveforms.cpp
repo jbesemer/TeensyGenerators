@@ -159,7 +159,7 @@ void CommandProcessing::VarSineCommand( Parser* commands ) {
 	float f2 = commands->Argv[ 6 ].toFloat();
 
 	StartNewWaveform(
-		new VarSineWaveform( a1, a2, o1, o2, f1, f2, count ) );
+		new VarSineWaveform( P1, a1, a2, P2, o1, o2, P3, f1, f2, count ) );
 }
 #endif
 
@@ -263,6 +263,7 @@ void CommandProcessing::OneShotCommand( Parser* commands ){
 	StartNewWaveform(
 		new WaveformTriggered(
 			ONESHOT_BUTTON,
+			ONESHOT_LED,
 			new PulseWaveform(
 				highValue,
 				lowValue,

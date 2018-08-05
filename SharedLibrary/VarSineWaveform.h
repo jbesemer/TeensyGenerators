@@ -30,14 +30,14 @@ protected:
 
 public:
 
-	VarSineWaveform( float ampMin, float ampMax, 
-			float offMin, float offMax, 
-			float freqMin, float freqMax, 
+	VarSineWaveform( int ampPin, float ampMin, float ampMax, 
+			int offPin, float offMin, float offMax,
+			int freqPin, float freqMin, float freqMax,
 			uint count = DEFAULTCOUNT )
 		: SineWaveform( count )
-		, Amplitude( P1, ampMin, ampMax )
-		, Offset( P2, offMin, offMax )
-		, Frequency( P3, freqMin, freqMax )
+		, Amplitude( ampPin, ampMin, ampMax )
+		, Offset( offPin, offMin, offMax )
+		, Frequency( freqPin, freqMin, freqMax )
 	{
 		SetFrequency( Frequency.Current );
 

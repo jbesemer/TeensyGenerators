@@ -1,6 +1,5 @@
 #pragma once
 
-#if ONE_SHOT_COMMAND
 #include "Waveform.h"
 #include "Button.h"
 
@@ -10,14 +9,16 @@
 class WaveformTriggered : public Waveform
 {
 	Button TriggerButton;
+	int LedPin;
 	bool Waiting;
 
 public:
 	Waveform* TheWaveform;
 
-	WaveformTriggered( int button, Waveform* waveform )
+	WaveformTriggered( int button, int ledPin, Waveform* waveform )
 		: TriggerButton( button )
 	{
+		LedPin = ledPin;
 		TheWaveform = waveform;
 		Waiting = false;
 	}
@@ -31,4 +32,3 @@ public:
 		return r;
 	}
 };
-#endif

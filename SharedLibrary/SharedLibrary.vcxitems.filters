@@ -109,6 +109,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)WaveformTriggered.h">
       <Filter>Waveforms</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VarSineWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
@@ -190,6 +193,9 @@
       <Filter>Commands</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)WaveformTriggered.cpp">
+      <Filter>Waveforms</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VarSineWaveform.cpp">
       <Filter>Waveforms</Filter>
     </ClCompile>
   </ItemGroup>

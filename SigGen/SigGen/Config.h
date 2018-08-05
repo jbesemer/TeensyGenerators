@@ -6,8 +6,8 @@
 
 // individual features/commands 
 
-#define ONE_SHOT_COMMAND	0	// enable OneShotCommand
-#define VARIABLE_COMMANDS	0	// variable waveforms based on Pot inputs (which of course presumes a Pot)
+#define ONE_SHOT_COMMAND	1	// enable OneShotCommand
+#define VARIABLE_COMMANDS	1	// variable waveforms based on Pot inputs 
 
 // board specifics
 

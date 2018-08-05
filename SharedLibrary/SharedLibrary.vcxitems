@@ -46,6 +46,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)StairWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TestWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)UniformWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VarSineWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Waveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WaveformPadded.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WaveformSequence.h" />
@@ -75,6 +76,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)StairWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TestWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)UniformWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VarSineWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Waveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WaveformPadded.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WaveformSequence.cpp" />
