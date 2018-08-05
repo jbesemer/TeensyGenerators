@@ -37,7 +37,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Generator.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)HiLowWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)LedOneShot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NameIdPair.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)PersistentSettings.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PrintfAndTrace.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)PulseWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Sample.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)SettingsStruct.h" />
@@ -71,6 +73,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Generator.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)HiLowWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PersistentSettings.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PrintfAndTrace.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PulseWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SettingsStruct.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SineWaveform.cpp" />

@@ -1,6 +1,5 @@
 #pragma once
 
-#include <WProgram.h>
 #include "Config.h"
 #include "Sample.h"
 #include "AnalogWriter.h"

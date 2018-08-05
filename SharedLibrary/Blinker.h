@@ -29,11 +29,15 @@ public:
 
 public:
 
-	Blinker( int pin, int pattern, int bits, uint interval ){
-		Pin = pin;
+	void SetPattern(int pattern, int bits, uint interval) {
 		Pattern = pattern;
 		Bits = bits;
 		Interval = interval;
+	}
+
+	Blinker( int pin, int pattern, int bits, uint interval ){
+		Pin = pin;
+		SetPattern(pattern, bits, interval);
 		Blinking = true;
 		Index = 0;
 

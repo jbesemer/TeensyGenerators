@@ -31,7 +31,7 @@ public:
 	// for speed, if you know all values are in range, 
 	// or don't care if they're truncated
 	
-	void WriteRaw( uint value ) { analogWrite( Pin, value ); }
+	virtual void WriteRaw( uint value ) { analogWrite( Pin, value ); }
 
 	// keep outputs within limits
 

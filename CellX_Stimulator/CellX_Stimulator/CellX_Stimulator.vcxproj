@@ -34,7 +34,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared" />
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\SharedLibrary\SharedLibrary.vcxitems" Label="Shared" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -50,10 +52,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\SPI;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\EEPROM;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;$(ProjectDir)..\..\SignalGenerator\libraries;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\utils;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include;$(ProjectDir)..\CellX_Stimulator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CellX_Stimulator;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\..\Arduino\libraries;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\arm\arm-none-eabi\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\arm\lib\gcc\arm-none-eabi\5.4.1\include;$(ProjectDir)..\..\..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)__vm\.CellX_Stimulator.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>__HARDWARE_MK20dx256__;__HARDWARE_MK20DX256__;_VMDEBUG=1;__MK20DX256__;TEENSYDUINO=136;ARDUINO=10802;F_CPU=72000000;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__HARDWARE_MK20dx256__;__HARDWARE_MK20DX256__;__MK20DX256__;TEENSYDUINO=142;ARDUINO=10805;F_CPU=72000000;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -90,54 +92,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActionWaveform.h" />
-    <ClInclude Include="AnalogReader.h" />
-    <ClInclude Include="AnalogWriter.h" />
-    <ClInclude Include="AnalogWriterMux.h" />
-    <ClInclude Include="ArbitraryWaveform.h" />
-    <ClInclude Include="Blinker.h" />
-    <ClInclude Include="Blinker.OneShot.h" />
-    <ClInclude Include="Button.h" />
-    <ClInclude Include="Button.Repeating.h" />
-    <ClInclude Include="Button.Toggle.h" />
     <ClInclude Include="CellX_Demo.h" />
     <ClInclude Include="CellX_Stimulator.h" />
     <ClInclude Include="CommandParser.h" />
     <ClInclude Include="CommandProcessing.h" />
     <ClInclude Include="Config.h" />
-    <ClInclude Include="CRC16.h" />
     <ClInclude Include="DemoWaveform.h" />
-    <ClInclude Include="DownloadableWaveform.h" />
-    <ClInclude Include="FixedWaveform.h" />
-    <ClInclude Include="Generator.h" />
     <ClInclude Include="ICycleWaveform.h" />
-    <ClInclude Include="LedOneShot.h" />
     <ClInclude Include="NameIdPair.h" />
-    <ClInclude Include="PersistentSettings.h" />
     <ClInclude Include="PlayLoop.h" />
-    <ClInclude Include="PrintfAndTrace.h" />
-    <ClInclude Include="PulseWaveform.h" />
     <ClInclude Include="QuadMux.h" />
-    <ClInclude Include="Sample.h" />
-    <ClInclude Include="SettingsStruct.h" />
-    <ClInclude Include="SineWaveform.h" />
-    <ClInclude Include="Stabalizer.h" />
-    <ClInclude Include="StairWaveform.h" />
     <ClInclude Include="TeensyCellX.h" />
-    <ClInclude Include="TeensyMisc.h" />
-    <ClInclude Include="TestWaveform.h" />
     <ClInclude Include="ToggleMode.h" />
-    <ClInclude Include="UniformWaveform.h" />
     <ClInclude Include="UniformCycleWaveform.h" />
-    <ClInclude Include="Waveform.h" />
     <ClInclude Include="WaveformCycleSequence.h" />
-    <ClInclude Include="WaveformPadded.h" />
-    <ClInclude Include="WaveformSequence.h" />
-    <ClInclude Include="ZeroingMode.h" />
-    <ClInclude Include="ZeroWaveform.h" />
     <ClInclude Include="__vm\.CellX_Stimulator.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArbitraryWaveform.cpp" />
     <ClCompile Include="CellX_Demo.cpp" />
     <ClCompile Include="CommandParser.CommandTable.cpp" />
     <ClCompile Include="CommandParser.cpp" />
@@ -150,26 +121,8 @@
     <ClCompile Include="CommandProcessing.SerialPolling.cpp" />
     <ClCompile Include="CommandProcessing.Tests.cpp" />
     <ClCompile Include="CommandProcessing.Waveforms.cpp" />
-    <ClCompile Include="CRC16.cpp" />
-    <ClCompile Include="DemoWaveform.cpp" />
-    <ClCompile Include="DownloadableWaveform.cpp" />
-    <ClCompile Include="FixedWaveform.cpp" />
-    <ClCompile Include="PersistentSettings.cpp" />
     <ClCompile Include="PrintfAndTrace.cpp" />
-    <ClCompile Include="PulseWaveform.cpp" />
-    <ClCompile Include="SettingsStruct.cpp" />
-    <ClCompile Include="SineWaveform.cpp" />
-    <ClCompile Include="StairWaveform.cpp" />
-    <ClCompile Include="TeensyCellX.cpp" />
-    <ClCompile Include="TeensyMisc.cpp" />
-    <ClCompile Include="TestWaveform.cpp" />
     <ClCompile Include="ToggleMode.cpp" />
-    <ClCompile Include="UniformWaveform.cpp" />
-    <ClCompile Include="Waveform.cpp" />
-    <ClCompile Include="WaveformPadded.cpp" />
-    <ClCompile Include="WaveformSequence.cpp" />
-    <ClCompile Include="ZeroingMode.cpp" />
-    <ClCompile Include="ZeroWaveform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

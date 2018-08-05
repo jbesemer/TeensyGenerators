@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Config.h"
+#include "PrintfAndTrace.h"
 
 // blink out a pattern once each time Start is called
 

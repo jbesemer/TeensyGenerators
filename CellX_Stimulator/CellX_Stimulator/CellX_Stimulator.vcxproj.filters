@@ -24,100 +24,13 @@
     <ClInclude Include="Config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ZeroWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ZeroingMode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WaveformSequence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WaveformPadded.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Waveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UniformWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TestWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StairWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Stabalizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SineWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SettingsStruct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sample.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PulseWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PersistentSettings.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LedOneShot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Generator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FixedWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DownloadableWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DemoWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CRC16.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.Toggle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.Repeating.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Blinker.OneShot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Blinker.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ArbitraryWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AnalogWriter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AnalogReader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TeensyCellX.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QuadMux.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NameIdPair.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AnalogWriterMux.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ToggleMode.h">
@@ -127,15 +40,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="__vm\.CellX_Stimulator.vsarduino.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CellX_Stimulator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TeensyMisc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PrintfAndTrace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PlayLoop.h">
@@ -153,6 +57,8 @@
     <ClInclude Include="WaveformCycleSequence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TeensyCellX.h" />
+    <ClInclude Include="CellX_Stimulator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CommandParser.cpp">
@@ -176,60 +82,6 @@
     <ClCompile Include="CommandProcessing.Waveforms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ZeroWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ZeroingMode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WaveformSequence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WaveformPadded.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Waveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UniformWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StairWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SineWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SettingsStruct.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PulseWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PersistentSettings.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FixedWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DownloadableWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DemoWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CRC16.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ArbitraryWaveform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TeensyCellX.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CommandProcessing.CellX.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -243,9 +95,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CellX_Demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TeensyMisc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PrintfAndTrace.cpp">

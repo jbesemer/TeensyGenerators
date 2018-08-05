@@ -113,6 +113,12 @@
       <Filter>Waveforms</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)TeensyCommon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NameIdPair.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PrintfAndTrace.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
@@ -200,6 +206,9 @@
       <Filter>Waveforms</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)TeensyCommon.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PrintfAndTrace.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Commands">

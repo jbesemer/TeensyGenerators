@@ -1,18 +1,9 @@
 #pragma once
 
 #include "Config.h"
+#include "NameIdPair.h"
 
 #define MAX_ARGS 8
-
-struct NameIdPair {
-	const char* Name;
-	int Id;
-
-	NameIdPair( int id, const char* name ){
-		Id = id;
-		Name = name;
-	}
-};
 
 class Parser
 {

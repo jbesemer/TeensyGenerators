@@ -19,8 +19,12 @@ protected:
 
 public:
 
-	Generator();
-	void Loop();
+	Generator(AnalogWriter* writer=NULL) { SetWriter(writer); }
+
+	void Loop() {
+		if (CurrentWaveform != NULL)
+			CurrentWaveform->Play(Writer);
+	}
 
 	Waveform* Get(){ return CurrentWaveform; }
 	void Set( Waveform* waveform ){ CurrentWaveform = waveform; }

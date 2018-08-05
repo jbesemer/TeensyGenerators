@@ -13,7 +13,7 @@ public:
 	WaveformSequence( int count );
 
 	// caller supplies waveforms array
-	WaveformSequence( Waveform** Waveforms, int count );
+	WaveformSequence( Waveform** waveforms, int count );
 
 	virtual void Play( AnalogWriter* writer );
 

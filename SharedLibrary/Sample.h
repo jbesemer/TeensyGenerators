@@ -1,7 +1,5 @@
 #pragma once
 
-#include <WProgram.h>
-
 #include "Config.h"
 
 class Sample
