@@ -81,11 +81,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Teensy.cpp" />
+    <ClCompile Include="TeensyModulator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
-    <ClInclude Include="Teensy.h" />
+    <ClInclude Include="TeensyModulator.h" />
     <ClInclude Include="__vm\.Modulator.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

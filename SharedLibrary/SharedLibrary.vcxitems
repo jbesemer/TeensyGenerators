@@ -44,6 +44,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)SineWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Stabalizer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)StairWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TeensyCommon.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TestWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)UniformWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)VarSineWaveform.h" />
@@ -74,6 +75,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)SettingsStruct.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SineWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)StairWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TeensyCommon.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TestWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)UniformWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)VarSineWaveform.cpp" />

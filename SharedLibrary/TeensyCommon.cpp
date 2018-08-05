@@ -3,14 +3,6 @@
 
 // LED ports //////////////////////////////////////////////////////////////////
 
-int LEDONTIME = 500;	// msec
-
-void show( int pinOff, int pinOn ){
-	digitalWrite( pinOff, LOW );
-	digitalWrite( pinOn, HIGH );
-	delay( LEDONTIME );
-}
-
 void LedSet( int ledPin, int isOn ){
 	digitalWrite(
 		ledPin,
@@ -25,6 +17,14 @@ void LedOn( int ledPin ){
 
 void LedOff( int ledPin ){
 	digitalWrite( ledPin, LOW );
+}
+
+int LEDONTIME = 500;	// msec
+
+void show( int pinOff, int pinOn ){
+	digitalWrite( pinOff, LOW );
+	digitalWrite( pinOn, HIGH );
+	delay( LEDONTIME );
 }
 
 // Buttons /////////////////////////////////////////////////////////////
@@ -42,6 +42,24 @@ int ButtonPressed( int button ){
 
 int ButtonReleased( int button ){
 	return digitalRead( button ) == HIGH;
+}
+
+// first button found to be pressed else BUTTON_NONE, list terminated by BUTTON_NONE
+int AnyButtonPressed( int* buttons ){
+	for( int i = 0; buttons[ i ] != BUTTON_NONE; i++ )
+		if( ButtonPressed( buttons[ i ] ) )
+			return buttons[ i ];
+
+	return BUTTON_NONE;
+}
+
+// first button found to be pressed else BUTTON_NONE, list has explict length
+int AnyButtonPressed( int* buttons, int length ){
+	for( int i = 0; i < length; i++ )
+		if( ButtonPressed( buttons[ i ] ) )
+			return buttons[ i ];
+
+	return BUTTON_NONE;
 }
 
 // Misc. //////////////////////////////////////////////////////////////

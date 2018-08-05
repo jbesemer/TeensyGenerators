@@ -112,6 +112,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)VarSineWaveform.h">
       <Filter>Waveforms</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TeensyCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
@@ -198,6 +199,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)VarSineWaveform.cpp">
       <Filter>Waveforms</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TeensyCommon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Commands">

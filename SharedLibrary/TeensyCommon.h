@@ -28,7 +28,10 @@ extern int ButtonPressed( int button );		// ...pressed (input is LOW)
 extern int ButtonReleased( int button );	// ...released (input is HIGH)
 
 											// return 1 if any of the 4 buttons are pressed
-extern int AnyButtonPressed();
+// extern int AnyButtonPressed();
+extern int AnyButtonPressed( int* buttons );
+extern int AnyButtonPressed( int* buttons, int length );
+
 
 // preferred abbreviations
 
