@@ -3,16 +3,14 @@
 // Config.h -- global configuration switch and options
 
 #include "TeensyCommon.h"
-
 #include "CellX_Stimulator.h"
-#include "TeensyMisc.h"
 
 // app identification
 
 #define VERSION "1.1.0"
 #define DATE "5-August-2018 12:15"
 
-#define APPNAME "Jaeger Stimulator"
+#define ASSEMBLYNAME "Jaeger Stimulator"
 #define MODEL "Teensy 3.1"
 #define AUTHOR "JB, Inc"
 

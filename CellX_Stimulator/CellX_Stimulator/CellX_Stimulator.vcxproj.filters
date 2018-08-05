@@ -15,25 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CommandParser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandProcessing.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DemoWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="QuadMux.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NameIdPair.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ToggleMode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CellX_Demo.h">
@@ -42,65 +27,16 @@
     <ClInclude Include="__vm\.CellX_Stimulator.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayLoop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ActionWaveform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ICycleWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UniformCycleWaveform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WaveformCycleSequence.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TeensyCellX.h" />
     <ClInclude Include="CellX_Stimulator.h" />
+    <ClInclude Include="AnalogWriterMux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CommandParser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.Download.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.Help.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.SerialPolling.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.Tests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.Waveforms.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.CellX.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandParser.ErrorReporting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandParser.CommandTable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ToggleMode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CellX_Demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintfAndTrace.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandProcessing.ReportError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

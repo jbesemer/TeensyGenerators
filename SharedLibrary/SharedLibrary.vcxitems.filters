@@ -119,6 +119,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)PrintfAndTrace.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ICycleWaveform.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ToggleMode.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
@@ -207,6 +213,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)TeensyCommon.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PrintfAndTrace.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ToggleMode.cpp">
       <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>

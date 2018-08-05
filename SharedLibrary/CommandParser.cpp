@@ -136,6 +136,7 @@ int Parser::GetSingleIntArg( int Default ){
 	return Default;
 }
 
+
 // NamedIdPair eliminates the need to constrain the order 
 // of the enums and the commands in any way.
 // commands with "?" must preceed the ones without a suffix

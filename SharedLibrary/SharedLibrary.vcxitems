@@ -36,6 +36,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)FixedWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Generator.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)HiLowWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ICycleWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)LedOneShot.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)NameIdPair.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)PersistentSettings.h" />
@@ -48,6 +49,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)StairWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TeensyCommon.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TestWaveform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ToggleMode.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)UniformWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)VarSineWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Waveform.h" />
@@ -80,6 +82,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)StairWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TeensyCommon.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)TestWaveform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ToggleMode.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)UniformWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)VarSineWaveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Waveform.cpp" />
