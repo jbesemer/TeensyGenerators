@@ -1,39 +1,22 @@
-// Config.h -- global configuration switch and options
-
 #pragma once
 
-#if defined(ARDUINO) && ARDUINO >= 100
-#include "arduino.h"
-#else
-#include "WProgram.h"
-#endif
+// Config.h -- global configuration switch and options
 
-// board specifics
+#include "TeensyCommon.h"
+#include "TeensyModulator.h"
 
-// only define one of these
-
-#define TEENSY_LI			0	// original "Li" board
-#define TEENSY_OBIS		1	// revisions for modulating obis lasers
-#define TEENSY_CELLEX	0	// revisions for cellex version
 
 // individual features/commands 
 
 #define ONE_SHOT_COMMAND	0	// enable OneShotCommand
-#define VARIABLE_COMMANDS	0	// variable waveforms based on Pot inputs (which of course presumes a Pot)
-#define ENABLE_DOWNLOAD_COMMANDS	0	// downloading is work in progress
-
-#include "Teensy.h"
+#define VARIABLE_COMMANDS	0	// variable waveforms based on Pot inputs
+#define ENABLE_DOWNLOAD_COMMANDS	0	// downloading is not working yet 
 
 // app configuration
 
 #define ASSEMBLYNAME "Modulator"
-#define VERSION "1.0.0"
+#define VERSION "1.0.1"
 #define MODEL "Teensy 3.1"
-#define DATE "4-Aug-2018 19:20"
+#define DATE "5-Aug-2018 10:55"
 
-
-// preferred abbreviations
-
-typedef unsigned int uint;		// 16 bits
-typedef unsigned long ulong;	// 32 bits
 

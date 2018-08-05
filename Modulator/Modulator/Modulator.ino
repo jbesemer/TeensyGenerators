@@ -1,8 +1,10 @@
 /*
- Name:		SigGen.ino
+ Name:		Modulator.ino
  Created:	5/21/2015 11:45:44 AM
  Author:	besemerj
 */
+
+// standard main/startup for Modulator project
 
 #include "Config.h"
 #include "CommandProcessing.h"
@@ -40,7 +42,7 @@ CommandProcessing CommandProcessor; //  ( &TheGenerator );
 // Setup //////////////////////////////////////////////////////////////////////
 
 void setup() {
-	Teensy_Setup();
+	Modulator_Setup();
 	Serial.println( "Starting..." );
 
 	CommandProcessor.Setup();
