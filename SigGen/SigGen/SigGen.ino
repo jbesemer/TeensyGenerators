@@ -5,10 +5,8 @@
 */
 
 #include "Config.h"
-#include "CommandProcessing.h"
-#include "PersistentSettings.h"
 #include "Blinker.h"
-#include <EEPROM.h>
+#include "CommandProcessing.h"
 
 // Burn-down list:
 //

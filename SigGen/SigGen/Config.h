@@ -2,11 +2,7 @@
 
 #pragma once
 
-#if defined(ARDUINO) && ARDUINO >= 100
 #include "arduino.h"
-#else
-#include "WProgram.h"
-#endif
 
 // individual features/commands 
 
@@ -20,17 +16,9 @@
 // app configuration
 
 #define ASSEMBLYNAME "SigGen"
-#define VERSION "2.0.7"
+#define VERSION "3.0.0"
 #define MODEL "Teensy 3.1"
-#define DATE "17-Jul-2017 17:22"
-
-#if VER_2_0_6A
-#define VERSION "2.0.6A"
-#endif
-#if VER_2_0_6
-#define DATE "26-Jul-2016 12:00"
-#define VERSION "2.0.6"
-#endif
+#define DATE "4-Aug-2018 18:33"
 
 #define ENABLE_DOWNLOAD_COMMANDS	0	// downloading is work in progress
 
