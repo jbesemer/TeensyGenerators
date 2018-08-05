@@ -20,24 +20,17 @@
 
 #define ONE_SHOT_COMMAND	0	// enable OneShotCommand
 #define VARIABLE_COMMANDS	0	// variable waveforms based on Pot inputs (which of course presumes a Pot)
+#define ENABLE_DOWNLOAD_COMMANDS	0	// downloading is work in progress
 
 #include "Teensy.h"
 
 // app configuration
 
 #define ASSEMBLYNAME "Modulator"
-#define VERSION "0.0.3"
+#define VERSION "1.0.0"
 #define MODEL "Teensy 3.1"
-#define DATE "23-Jul-2018 14:50"
+#define DATE "4-Aug-2018 19:20"
 
-#if VER_0_0_1
-#define ASSEMBLYNAME "SigGen"
-#define VERSION "0.0.1"
-#define MODEL = "Teensy 3.1"
-#define DATE "2-Jun-2017 14:00"
-#endif
-
-#define ENABLE_DOWNLOAD_COMMANDS	0	// downloading is work in progress
 
 // preferred abbreviations
 
