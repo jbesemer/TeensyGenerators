@@ -161,6 +161,61 @@ void CommandProcessing::VarSineCommand( Parser* commands ) {
 	StartNewWaveform(
 		new VarSineWaveform( P1, a1, a2, P2, o1, o2, P3, f1, f2, count ) );
 }
+
+
+#if false // too clever by half
+
+void CommandProcessing::VarSineCommand( Parser* commands ) {
+	// varsine amin,amax, omin,omax, fmin,fmax [,apin,opin,fpin] [,count]
+
+	int aPin, float aMin, float aMax,
+		int oPin, float oMin, float oMax,
+		int fPin, float fMin, float fMax;
+	int count;
+
+	switch( commands->Argc ) {
+	default:
+		Parser::ReportError( ErrBadArgCount );
+		return;
+	case 7:
+	case 10:
+		count = 100;
+		break;
+	case 8:
+	case 11:
+		count = commands->Argv[ 10 ].toInt();
+		break;
+	}
+
+	aMin = commands->Argv[ 1 ].toFloat();
+	aMax = commands->Argv[ 2 ].toFloat();
+	oMin = commands->Argv[ 3 ].toFloat();
+	oMax = commands->Argv[ 4 ].toFloat();
+	fMin = commands->Argv[ 5 ].toFloat();
+	fMax = commands->Argv[ 6 ].toFloat();
+
+	switch( commands->Argc >= 10 ){
+	case 10:
+	case 11:
+		aPin = commands->Argv[ 7 ].toFloat();
+		oPin = commands->Argv[ 8 ].toFloat();
+		fPin = commands->Argv[ 9 ].toFloat();
+		break;
+	case 7:
+	case 8:
+		aPin = P1;
+		oPin = P2;
+		fPin = P3;
+		break;
+	}
+
+	StartNewWaveform(
+		new VarSineWaveform( aPin, aMin, aMax, oPin, oMin, oMax, fPin, fMin, fMax, count ) );
+}
+
+
+#endif
+
 #endif
 
 // Square Wave and Pulse Waveforms ////////////////////////////////////////////
@@ -297,4 +352,3 @@ void CommandProcessing::StepsCommand( Parser* commands ){
 			stepLevel,
 			stepDuration ) );
 }
-
