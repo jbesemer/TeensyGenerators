@@ -1,5 +1,6 @@
 #pragma once
 
+#if ONE_SHOT_COMMAND
 #include "Waveform.h"
 #include "Button.h"
 
@@ -30,3 +31,4 @@ public:
 		return r;
 	}
 };
+#endif

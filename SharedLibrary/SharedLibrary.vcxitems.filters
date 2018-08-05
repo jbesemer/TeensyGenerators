@@ -97,6 +97,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)ZeroingMode.h">
       <Filter>Commands</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderFiltered.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderScaled.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderStable.h">
+      <Filter>Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformTriggered.h">
+      <Filter>Waveforms</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CommandParser.cpp">
@@ -176,6 +188,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)ZeroingMode.cpp">
       <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformTriggered.cpp">
+      <Filter>Waveforms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

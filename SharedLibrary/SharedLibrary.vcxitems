@@ -18,6 +18,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderFiltered.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderScaled.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnalogReaderStable.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)AnalogWriter.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ArbitraryWaveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Blinker.h" />
@@ -46,6 +49,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Waveform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WaveformPadded.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WaveformSequence.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaveformTriggered.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ZeroingMode.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ZeroWaveform.h" />
   </ItemGroup>
@@ -74,6 +78,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Waveform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WaveformPadded.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)WaveformSequence.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaveformTriggered.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ZeroingMode.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ZeroWaveform.cpp" />
   </ItemGroup>
