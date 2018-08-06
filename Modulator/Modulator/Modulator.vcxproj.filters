@@ -18,12 +18,10 @@
     <None Include="Modulator.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="__vm\.Modulator.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Modulator.h" />
+    <ClInclude Include="Config.h" />
   </ItemGroup>
 </Project>

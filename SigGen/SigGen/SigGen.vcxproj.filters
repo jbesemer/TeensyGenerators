@@ -18,12 +18,10 @@
     <None Include="SigGen.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="__vm\.SigGen.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SigGen.h" />
+    <ClInclude Include="Config.h" />
   </ItemGroup>
 </Project>
